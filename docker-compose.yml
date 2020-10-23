@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  borg-server:
+    image: borg_server
+    restart: unless-stopped
+    ports:
+      - "2222:22"
+    volumes:
+      - ./userfiles/repository:/home/backup/repository
+      - ./userfiles/ssh:/home/backup/.ssh

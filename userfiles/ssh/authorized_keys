@@ -1,0 +1,1 @@
+command="borg serve --restrict-to-repository /home/backup/repository",restrict ssh-ed25519 [INSERT YOUR KEY HERE]
